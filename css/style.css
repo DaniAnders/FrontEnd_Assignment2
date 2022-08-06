@@ -1,0 +1,298 @@
+:root {
+    --bcolor: rgba(255, 255, 255, 0.843);
+    --form-color: rgba(255, 255, 255, 0.716)
+}
+
+
+body *{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    color: rgb(15, 11, 2);
+    background-color: rgb(57, 170, 198);
+    display: grid;
+    grid-template-rows: 100px 1800px auto;
+    height: 100%;
+          
+}
+
+#main-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#main-container {
+    padding: 20px 0 20px 0;
+}
+
+#main-contentheader {
+   grid-column: 1/3;
+   grid-row: 1/2;
+}
+
+#aside {
+    grid-column: 3/3;
+    grid-row: 1/3;
+}
+
+#article1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--bcolor);
+}
+
+#picture {
+    font-size: 10px;
+}
+
+#article2 {
+    grid-column: 2/2;
+    grid-row: 2/3;
+    background-color: var(--bcolor);
+}
+
+#section {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: var(--bcolor);
+}
+
+
+div > header {
+    background-color: var(--bcolor);
+    
+}
+
+aside{
+    background-color: var(--bcolor);
+    font-size: 20px; 
+}
+
+aside > ul > li {
+    text-align: center;
+    list-style: none;
+}
+
+
+#top-header {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(11, 113, 138);
+    position: sticky;
+    top: 0;
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 20px;    
+}
+
+header > nav > ul > li {
+    font-size: 20px;
+    background-color: rgb(11, 113, 138);  
+    padding: 38px;  
+}
+
+header > nav > ul > li:hover, #home:hover{
+    background-color: rgb(4, 78, 93); 
+}
+
+#login, #home{  
+    font-size: 20px;
+    background-color: rgb(11, 113, 138);   
+    padding: 35px;
+}
+
+#login:hover{
+    background-color: rgb(3, 108, 3);
+}
+
+
+h1, ul.nav , ul.nav a, nav.login, nav.login a, nav.home, nav.home a{
+    color: white;
+}
+
+
+#p2 {
+    color: blue;
+    font: bold;
+}
+
+#list1 {
+    background-color: rgb(7, 22, 132);
+    color: yellow;
+}
+
+#list2 {
+    background-color: rgb(112, 22, 22);
+    color: rgb(8, 8, 60);
+    text-shadow: 2px 2px 5px white;
+}
+
+#list3 {
+    background-color: rgb(135, 21, 21);
+    color: white;
+}
+
+footer {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(11, 113, 138);  
+    padding: 40px 0 120px 0; 
+    margin-top: 10px;
+}
+
+
+#title {
+    text-transform: uppercase;
+    color: rgb(42, 38, 118);
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+} 
+
+#subtitle {
+    text-transform: uppercase;
+    color: rgb(42, 38, 118);
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+fieldset {
+   border: 0;
+}
+
+#username, #password {
+    height: 35px;
+    width: 250px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 20px;
+    color: rgb(42, 38, 118);
+}
+
+input, button {
+    border-radius: 10px;
+}
+
+.main-loginheader {
+    background-color: var(--bcolor);
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 100px;
+}
+
+.form {
+    background-color: var(--form-color);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 20px;
+}
+
+button{
+    font-size: 20px;
+    height: 50px;
+    width: 360px;
+    margin-top: 20px;
+}
+
+#resetbt {
+    background-color: red;
+    color: white;
+}
+
+#resetbt:hover{
+    background-color: rgb(144, 9, 9);
+}
+
+#signinbt {
+    background-color: rgb(8, 130, 8);
+    color: white;
+}
+
+#signinbt:hover {
+    background-color: rgb(6, 65, 6);
+
+}
+
+
+@media (max-width: 800px) {
+
+    body {
+        display: grid;
+        grid-template-rows: 120px 400px 50px;
+        height: 100%;
+              
+    }
+
+    p {
+        color: blue;
+        font-size: 14px;
+    }
+
+    #main-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+
+    #main-contentheader {
+        grid-column: 1/2;
+        grid-row: 1/2;
+     }
+     
+     #aside {
+         grid-column: 2/2;
+         grid-row: 1/6;
+     }
+     
+     #article1 {
+         grid-column: 1/2;
+         grid-row: 3/4;
+     }
+     
+     #article2 {
+         grid-column: 1/2;
+         grid-row: 5/6;
+     }
+
+     #section {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        grid-column: 1/3;
+        grid-row: 6/7;
+        padding: 5px 0 8px 0; 
+       
+    }
+   
+     footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        padding: 5px 0 5px 0;     
+    }
+
+}
