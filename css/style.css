@@ -46,6 +46,11 @@ body {
     background-color: var(--bcolor);
 }
 
+#img{
+    width: 200px;
+    height: 150px;
+}
+
 #picture {
     font-size: 10px;
 }
