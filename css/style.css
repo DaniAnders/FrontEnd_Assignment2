@@ -118,6 +118,9 @@ h1, ul.nav , ul.nav a{
     color: white;
 }
 
+p {
+    margin-bottom: 10px;
+}
 
 #p2 {
     color: blue;
